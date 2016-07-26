@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style  >
+.flex-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  float: left;
+}
+.flex-item{
+  background: tomato;
+  padding: 5px;
+  width: 50px;
+  margin: 5px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+.flex-start{
+  align-items: flex-start;
+  -webkit-align-items;flex-start;
+}
+.flex-end{
+  align-items: flex-end;
+  -webkit-align-items:flex-end;
+}
+.flex-end li{
+  background: gold;
+}
+.center {
+  -webkit-align-items: center;
+  align-items: center;
+}
+.center li {
+  background: deepskyblue;
+}
+.baseline {
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+.baseline li {
+  background: lightgreen;
+}
+.stretch {
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+.stretch li {
+  background: hotpink;
+}
+</style>
+
+</head>
+
+<body>
+  <ul class="flex-container flex-start">
+    <li class="flex-item">1
+      <br />2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4
+      <br />5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  <ul class="flex-container flex-end">
+  <li class="flex-item">1<br>2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4<br>5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+<ul class="flex-container center">
+  <li class="flex-item">1<br>2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4<br>5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+<ul class="flex-container baseline">
+  <li class="flex-item">1<br>2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4<br>5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+<ul class="flex-container stretch">
+  <li class="flex-item">1<br>2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4<br>5</li>
+  <li class="flex-item">6</li>
+</ul>
+</body>
+
+</html>

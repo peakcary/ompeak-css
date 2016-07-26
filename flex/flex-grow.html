@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flex-grow</title>
+    <style>
+      .container{
+        display: flex;
+        width: 480px;
+        height: 100px;
+      }
+      .item1{
+        flex-grow: 1;
+        background: green;
+        width: 100px;
+        height: 100px;
+      }
+      .item2{
+        flex-grow: 2;
+        background: red;
+        width: 100px;
+        height: 100px;
+      }
+      .item3{
+        flex-grow: 3;
+        background: blue;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">
+
+      </div>
+      <div class="item2">
+
+      </div>
+      <div class="item3">
+
+      </div>
+    </div>
+    <em>
+      公式：<br /> 
+      计算容器还剩空间<br />
+      available_space(容器还剩的空间）=container_size(容器宽度)-flex_item_total(子元素宽度之和)<br />
+      计算增长单位<br />
+      grow_unit(增长单位)=available_space/flex_grow_total(子元素增长因子之和)<br />
+      得到子元素的宽度<br />
+      flex-item-width(子元素计算得到的宽度)=flex-basis+grow-unit*flex-grow<br />
+    </em>
+  </body>
+</html>

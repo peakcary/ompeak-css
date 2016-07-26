@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>flex-strink</title>
+  <style>
+    .flex-container {
+      display: flex;
+      width: 480px;
+      justify-content: space-between;
+    }
+
+    .flex-container div {
+      height: 40px;
+    }
+
+    .item1 {
+      background: #484281;
+      flex: 1 3 200px;
+    }
+
+    .item2 {
+      background: #5248af;
+      flex: 2 2 200px;
+    }
+
+    .item3 {
+      background: #786bfa;
+      flex: 3 1 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="item1">3/3/200px</div>
+    <div class="item2">2/2/200px</div>
+    <div class="item3">1/1/200px</div>
+  </div>
+  <em>
+    公式：<br />
+    overflow_space(溢出的宽度)<br />
+    计算溢出的宽度<br />
+    overflow-space=flex-item-total(子元素basis宽度之和)-container_width(容器宽度)  <br />
+    得到计算的子元素的宽度<br />
+    item-basis:子元素设置的flex-basis；item-shrink:子元素的flex-shrink；item-shrink-sum:所有子元素flex_shrink的和。  <br />
+    flex_item_width(计算的子元素的宽度)=item-basis --(overflow-space*(item-shrink/item-shrink-sum))  <br />
+  </em>
+</body>
+
+</html>
