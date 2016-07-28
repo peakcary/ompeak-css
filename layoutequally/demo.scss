@@ -1,0 +1,23 @@
+@mixin equal-flex ($children:li){
+  display: flex;
+  $childrenEle:li div p a span strong;
+  @if index($childrenEle,$children){
+    #{$children}{
+      flex:1;
+      width: 1%;
+    }
+  }
+  @else{
+    .#{$children}{
+      flex: 1;
+      width: 1%;
+    }
+  }
+}
+
+.nav-list{
+  @include equal-flex(nav-item);
+}
+.nav-list{
+  @include equal-flex();
+}
